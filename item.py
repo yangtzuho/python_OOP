@@ -46,7 +46,10 @@ class Item:
             return True
         else:
             return False
-
+    
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}('{self.name}, {self.price}, {self.quantity}')"
 
+    @property
+    def read_only_name(self):
+        return "AAA"
